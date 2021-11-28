@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="form-container">
+        <div class="title">Create account</div>
+        <form [formGroup]="createAccountForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your Email</mat-label>
+                <input matInput autocomplete="current-email" formControlName="email"/>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your username</mat-label>
+                <input matInput autocomplete="name" formControlName="username"/>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your password</mat-label>
+                <input type="password" autocomplete="current-password" matInput formControlName="password">
+            </mat-form-field>
+        </form>
+        <div class="buttons-container">
+            <button mat-raised-button class="login-button   ">
+                create account
+            </button>
+            <p>OR</p>
+            <button mat-button routerLink="/login">Login</button>
+        </div>
+    </div>
+</div>
